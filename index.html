@@ -29,26 +29,69 @@
         <div id="city">
             <div class="card-header">
                 <form class="search-header" action="">
-                    <input id="findCity" type="text" placeholder="Adelaide" name="Search City">
-                    <button id="btn-findCity" type="submit">
+                    <input id="lookforCity" type="text" placeholder="Adelaide, Australia" name="Search City">
+                    <button id="btn-lookforCity" type="submit">
                         <i class="fa fa-search"></i>
                     </button>
                 </form>
+                <ul class="list-group list-group-flush" id="searchedList"></ul>
             </div>
+        </div>
+
+        <ul id="5days-ul">
+            <h2 class="forcast5days-h2">Forecast 5 days</h2>
+            <li id="forcastday1">
+                <h5 class="showDate"></h5>
+                <img id="showIcon">
+                <p id="showtemp"></p>
+                <p id="showHumid"></p>
+            </li>
+            <li id="forcastday2">
+                <h5 class="showDate"></h5>
+                <img id="showIcon">
+                <p id="showtemp"></p>
+                <p id="showHumid"></p>
+            </li>
+            <li id="forcastday3">
+                <h5 class="showDate"></h5>
+                <img id="showIcon">
+                <p id="showtemp"></p>
+                <p id="showHumid"></p>
+            </li>
+            <li id="forcastday4">
+                <h5 class="showDate"></h5>
+                <img id="showIcon">
+                <p id="showtemp"></p>
+                <p id="showHumid"></p>
+            </li>
+            <li id="forcastday5">
+                <h5 class="showDate"></h5>
+                <img id="showIcon">
+                <p id="showtemp"></p>
+                <p id="showHumid"></p>
+            </li>
+        </ul>
+        <div class="figureCon">
+            <figure class="figure animated flipInX" id="figureCity">
+            </figure>
         </div>
     </div>
 
 
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
-        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
 </body>
 
