@@ -7,4 +7,9 @@
 
 .search-header {
     margin-top: 10px;
+    background-color: rgb(135, 228, 192);
+}
+
+.card-header {
+    background-color: rgb(135, 228, 192);
 }
