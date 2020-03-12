@@ -17,6 +17,7 @@
     <div id="header" class="text-center bg-dark">
         <h1>Weather Dashboard</h1>
     </div>
+    
     <div class="row">
         <div id="searchPanel">
             <label>
@@ -30,24 +31,95 @@
                 <button id="clear" class="btn clearBtn" data-toggle="tooltip" title="Clear History"><i
                         class="fas fa-times-circle"></i></button>
             </div>
-            <div id="searches"></div>
+            <div id="buttons-view" class="card" style="width: 18rem;">
+                <ul class="list-group list-group-flush" id="searchedList">
+                </ul>
+            </div>
         </div>
 
         <div id="mainContent" class="col">
             <div id="currentWeather">
                 <h3>CURRENT WEATHER </h3>
+                <div id="currentWeatherdetails">
+                    <div class="city"></div>
+                    <div class="current-date"></div>
+                    <div class="current-time"></div>
+                    <div class="wind"></div>
+                    <div class="humidity"></div>
+                    <div class="temp"></div>
+                    <div class="UV-Index"></div>
+                    <div id="forecast"></div>
+                </div>
             </div>
-            <div class="city"></div>
-            <div class="wind"></div>
-            <div class="humidity"></div>
-            <div class="temp"></div>
-            <div class="UV-Index"></div>
-
-            <div id="forecast"></div>
         </div>
-
     </div>
 
+    <div id="mainContent" class="col">
+        <div id="currentWeather">
+            <h3>5 DAYS WEATHER FORECAST</h3>
+            <div id="fivedaysWeatherdetails">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div id="day-1" class="card" style="width: 10rem;">
+                            <div class="card-body">
+                                <p id="displayDate1"></p>
+                                <img id="iconDaily">
+                                <p id="tempDaily1"></p>
+                                <p id="humid1"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div id="day-2" class="card" style="width: 10rem;">
+                            <div class="card-body">
+                                <p id="displayDate2"></p>
+                                <img id="iconDaily">
+                                <p id="tempDaily2"></p>
+                                <p id="humid2"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div id="day-3" class="card" style="width: 10rem;">
+                            <div class="card-body">
+                                <p id="displayDate3"></p>
+                                <img id="iconDaily">
+                                <p id="tempDaily3"></p>
+                                <p id="humid3"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div id="day-4" class="card" style="width: 10rem;">
+                            <div class="card-body">
+                                <p id="displayDate4"></p>
+                                <img id="iconDaily">
+                                <p id="tempDaily4"></p>
+                                <p id="humid4"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div id="day-5" class="card" style="width: 10rem;">
+                            <div class="card-body">
+                                <p id="displayDate5"></p>
+                                <img id="iconDaily">
+                                <p id="tempDaily5"></p>
+                                <p id="humid5"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
